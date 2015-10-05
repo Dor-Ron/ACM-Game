@@ -14,6 +14,7 @@ Ideas so far:
         the color of the balls.
 
   + **Logo Game**
+   
         Similar to other logo games, except it'll feature only feature video game oriented logos.
         Not exclusively game company logos. We start off showing logos of say the Horde flag from WoW
         Or logos of popular game titles like CoD, and progressively use harder logos. The incentive for 
