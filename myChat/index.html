@@ -1,0 +1,95 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Global Gen Y</title>
+    <link  rel="stylesheet"  href="chat.css">
+    <style>
+      * { margin: 0; padding: 0; box-sizing: border-box; }
+      body { font: 13px Helvetica, Arial; }
+      form { background: #000; padding: 3px; position: fixed; bottom: 0; width: 100%; }
+      form input { border: 0; padding: 10px; width: 90%; margin-right: .5%; }
+      form button { width: 9%; background: rgb(130, 224, 255); border: none; padding: 10px; }
+      #messages { list-style-type: none; margin: 0; padding: 0; }
+      #messages li { padding: 5px 10px; }
+      header {color: rgb(130, 224, 255);}
+      h1 { text-align: center; padding: 14px}
+      hr { border-width: 15 em;}
+      #list { width: 960px; color: navy; background-color: orange; border: 2px solid darkblue; padding: 5px; position: absolute;left: 50%;margin-left: -480px;}
+      form { width: 960px; margin-left: 160px;position: absolute;left: 50%;margin-left: -480px;}
+
+       body{
+            margin: 0;
+            text-align: center;
+       }
+
+       .header{
+            width: 100%;
+
+       }
+
+
+        #grad {
+          background: linear-gradient(red, blue); /* Standard syntax */
+        }
+
+        #bot {
+            position: absolute;
+            left: 50%;
+            width: 800px;
+            margin-left: -400px;
+            bottom: 0;
+        }
+    </style>
+  </head>
+  <body>
+    <!-- Header -->
+
+    <img src="http://i.picresize.com/images/2015/10/09/Lq6s.jpg" class="header">
+
+
+    <!-- Body for the text -->
+
+    <div id = "list" class="top" align="middle">
+        <ul id="messages" class="top"></ul>
+    </div>
+    <div id = "bot">
+        <form action="" id="bot"> 
+          <input id="m" autocomplete="off" align="middle"/><button>Send</button>
+        </form>
+    </div>
+
+    <script src="https://cdn.socket.io/socket.io-1.2.0.js"></script>
+    <script src="http://code.jquery.com/jquery-1.11.1.js"></script>
+
+    <script>
+      $(document).ready(function() {
+
+      var username = prompt("What is your name?")
+
+      var clientId = Math.floor((Math.random() * 999999999999) + 1)
+      var socket = io();
+      $('form').submit(function(){
+        var message = $('#m').val();
+        var dictionary = {}
+        dictionary["username"] = username + ">  ";
+        dictionary["id"] = clientId;
+        dictionary["message"] = message;
+        socket.emit('chat message', dictionary);
+        $('#m').val('');
+        return false;
+      });
+
+      socket.on('chat message', function(dict){
+        if (dict["id"] === clientId) {
+
+            //To keep track of time
+            var hourMin = new Date();
+            $('#messages').append($('<li style="background: grey;">').text(dict["username"] + dict["message"]));
+        }
+        else{
+            $('#messages').append($('<li>').text(dict["username"] + dict["message"]))}
+      });
+      });
+    </script>
+  </body>
+</html>
