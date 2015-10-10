@@ -1,0 +1,19 @@
+{
+  "name": "acm-game",
+  "version": "1.0.0",
+  "description": "Pel-inspired game for ACM GameDev (temp description change when needed)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Dor-Ron/ACM-Game.git"
+  },
+  "author": "acm baller game dev team (change when needed)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Dor-Ron/ACM-Game/issues"
+  },
+  "homepage": "https://github.com/Dor-Ron/ACM-Game#readme"
+}
