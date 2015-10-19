@@ -41,6 +41,21 @@ Week of October 11 - 17
 
 * [x] Start putting boilerplate code up
 * [ ] Start handing out tasks to individual team members
-* [ ] Brush up on JS
-* [ ] Choose libraries we're working with and get acquainted with them.
+* [x] Brush up on JS
+* [x] Choose libraries we're working with and get acquainted with them.
 * [ ] Start planning project. eg) scoring, math, art, music etc.
+
+Week of October 18-24 
+
+* [ ] Brush up on JS & Pixi for those who haven't yet done so
+* [ ] Start handing out tasks to individual team members
+    + Dor - Paddle creation, movement, and collision detection
+    + Edwin - ?
+    + Besart - Music and ?
+    + Alex - Art and ?
+    + Rod - ?
+    + Kenneth -
+    + Jet -?
+* [ ] Finish working on paddle (aside from art work, just functionality)
+* [ ] Work on scoring system, lives, and other basic stuff
+* [ ] Make work on math and ball generation if possible.
