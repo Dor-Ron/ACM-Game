@@ -9,8 +9,8 @@
 var Container = PIXI.Container,
     Graphics = PIXI.Graphics,
     autoDetectRenderer = PIXI.autoDetectRenderer,
-    loader = PIXI.loader; //might need this one later   
-    Text =  PIXI.Text   
+    loader = PIXI.loader, //might need this one later   
+    Text =  PIXI.Text;   
 
 //                              width, height
 var renderer = autoDetectRenderer(650, 700); //we'll play with this later, in original height > width as oppose to most games...
@@ -99,7 +99,7 @@ circle.x = 64;
 circle.y = 130;
 stage.addChild(circle);
 
-
+//delete this one too
 var circle2 = new Graphics();
 circle2.beginFill(0xfdbf00);
 circle2.drawCircle(0, 0, 14);
