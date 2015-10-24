@@ -49,13 +49,21 @@ Week of October 18-24
 
 * [ ] Brush up on JS & Pixi for those who haven't yet done so
 * [ ] Start handing out tasks to individual team members
-    + Dor - Paddle creation, movement, and collision detection
-    + Edwin - ?
-    + Besart - Music and ?
-    + Alex - Art and ?
-    + Rod - ?
-    + Kenneth -
-    + Jet -?
-* [ ] Finish working on paddle (aside from art work, just functionality)
+    * [x] Dor - Paddle creation, movement, and collision detection
+    * [ ] Edwin - ?
+    * [ ] Besart - Music and ?
+    * [ ] Alex - Art and ?
+    * [ ] Rod - ?
+    * [ ] Kenneth - ?
+    * [ ] Jet -?
+* [x] Finish working on paddle (aside from art work, just functionality)
 * [ ] Work on scoring system, lives, and other basic stuff
 * [ ] Make work on math and ball generation if possible.
+
+Week of October 25-31
+
+* [ ] Music
+* [ ] Art
+* [ ] Scoring && Lives
+* [ ] Upside down parabola and accelearation motion implementation
+* [ ] Ball Color Randomization
