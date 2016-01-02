@@ -1,0 +1,25 @@
+/* Temporary solution to center the canvas is using text-align
+I tried styling canvas element on its own with:
+
+canvas {
+	margin: 0 auto;
+}
+
+But that didn't work.... I guess it's has something to do with the DOM.
+Viewing source (ctrl+u), the canvas tag isn't generated yet, but when I 
+inspect element (ctrl+shift+i) there is a canvas tag. I think that's
+why the targeting the canvas tag isn't working, we'll figure it a better
+solution later....
+
+Note that the canvas border was made in the JS, even though it's technically css stuff
+*/
+
+body {
+	margin-top: 50px;
+	text-align: center;
+
+	footer {
+		margin-top: 35px;
+	}
+}
+
